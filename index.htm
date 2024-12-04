@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="calendarShow()">
+    <div class="title">
+      <h1>My Calendar</h1>
+    </div>
+    <div class="calendar">
+      <div class="input">
+        <input type="number" id="year" required />
+        <input type="number" id="month" min="0" max="11" required />
+        <button id="show" onclick="showChosenMonth()">Show</button>
+        <button id="backToCurrentBtn" onclick="backToCurrent()">
+          Back To Current
+        </button>
+      </div>
+      <div class="week">
+        <div class="weekend">SUN</div>
+        <div class="weekDay">MON</div>
+        <div class="weekDay">TUE</div>
+        <div class="weekDay">WED</div>
+        <div class="weekDay">THU</div>
+        <div class="weekDay">FRI</div>
+        <div class="weekend">SAT</div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div class="week">
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+        <div class="day"></div>
+      </div>
+      <div>
+        <input type="date" id="date" />
+        <button id="add" onclick="addHoliday()">Add Holiday</button>
+      </div>
+    </div>
+    <div id="one"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

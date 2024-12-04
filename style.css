@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: turquoise;
+}
+.week {
+    display: flex;
+}
+.title {
+    text-align: center;
+    color: gray;
+}
+.day, .weekend, .weekDay {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    margin: 0.2em;
+    border-radius: 12px;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.weekend {
+    background-color: hotpink;
+    color: white;
+}
+#year {
+    width: 60px;
+}
+#year,#month,#show {
+    margin: 1.2em;
+}
